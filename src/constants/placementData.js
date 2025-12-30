@@ -444,21 +444,21 @@ export const SEASONAL_PLACEMENT_OVERRIDES = {
       "positions": [
         {
           "podiumIndex": 0,
-          "x": 18.92,
-          "y": 32.03,
-          "scale": 0.206
+          "x": 16.63,
+          "y": 32.49,
+          "scale": 0.234
         },
         {
           "podiumIndex": 1,
-          "x": 31.87,
-          "y": 24.29,
-          "scale": 0.22
+          "x": 35.31,
+          "y": 15.09,
+          "scale": 0.173
         },
         {
           "podiumIndex": 2,
-          "x": 88.15,
-          "y": 50.4,
-          "scale": 0.192
+          "x": 88.93,
+          "y": 49.94,
+          "scale": 0.162
         }
       ]
     },
