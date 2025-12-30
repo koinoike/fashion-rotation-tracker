@@ -9,6 +9,10 @@ import "./CarouselImage.css";
 const MOBILE_SCALE_MULTIPLIER = 1.08;
 const USE_DYNAMIC_BACKGROUNDS = true;
 
+// 🎄 New Year background settings
+const ENABLE_NEW_YEAR_BACKGROUND = true;
+const NEW_YEAR_BACKGROUND_ALWAYS = true; // set to true to show New Year's background all the time
+
 export default function CarouselImage({
   item,
   isLive,
@@ -44,6 +48,30 @@ export default function CarouselImage({
     positionsRef,
     updatePosition
   );
+
+  // Check if we're in New Year period (Dec 25 - Jan 7)
+  const isNewYearPeriod = () => {
+    if (!ENABLE_NEW_YEAR_BACKGROUND) return false;
+
+    // If always enabled, return true
+    if (NEW_YEAR_BACKGROUND_ALWAYS) return true;
+
+    const now = new Date();
+    const month = now.getMonth(); // 0-11
+    const day = now.getDate(); // 1-31
+
+    // December (month 11) from 25 to 31
+    if (month === 11 && day >= 25) {
+      return true;
+    }
+
+    // January (month 0) from 1 to 7
+    if (month === 0 && day <= 7) {
+      return true;
+    }
+
+    return false;
+  };
 
   // Reset hidden outfits on collection change
   useEffect(() => {
@@ -86,10 +114,19 @@ export default function CarouselImage({
     setHiddenOutfits((p) => ({ ...p, [index]: true }));
 
   const isMobile = imageDimensions.width < 640;
-  const getBackgroundImage = () =>
-    !USE_DYNAMIC_BACKGROUNDS
-      ? "/assets/background/background.png"
-      : `/assets/background/background_${seasonData.path}.png`;
+
+  const getBackgroundImage = () => {
+    if (!USE_DYNAMIC_BACKGROUNDS) {
+      return "/assets/background/background.png";
+    }
+
+    // Check for New Year period for winter season
+    if (isNewYearPeriod() && seasonData.path === "winter") {
+      return `/assets/background/background_winter_newyear.png`;
+    }
+
+    return `/assets/background/background_${seasonData.path}.png`;
+  };
 
   return (
     <div className="image-block">
