@@ -1,0 +1,122 @@
+.container {
+  min-height: 100vh;
+  background: var(--season-gradient);
+  padding: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Main layout structure - spacing defined in spacing.css */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemdetail-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .main-layout {
+    flex-direction: column;
+  }
+  .itemdetail-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 16px;
+  }
+  .title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .item-detail-standalone {
+    display: block !important;
+    width: 33.333%;
+    flex-shrink: 0;
+  }
+
+  .main-layout > *:last-child {
+    width: 66.667%;
+    flex-shrink: 0;
+  }
+
+  .main-layout:has(.item-detail-standalone:empty) > *:last-child,
+  .main-layout > *:only-child {
+    width: 100%;
+  }
+}
+
+/* Dev Panel Button */
+.dev-panel-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 12px 20px;
+  background: var(--season-gradient);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 12px var(--season-accent-20);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+}
+
+.dev-panel-toggle-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px var(--season-accent-20);
+  background: var(--season-secondary);
+}
+
+.dev-panel-toggle-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px var(--season-accent-20);
+}
+
+@media (max-width: 768px) {
+  .dev-panel-toggle-button {
+    bottom: 80px;
+    right: 16px;
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dev-panel-toggle-button {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+}

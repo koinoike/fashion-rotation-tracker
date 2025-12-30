@@ -1,0 +1,128 @@
+/* src/components/OutfitCRUD/components/OutfitCard.css - WITH EDIT BUTTON */
+.crud-outfit-card {
+  background: #1a1a1a;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.crud-outfit-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Outfit image */
+.crud-outfit-image {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.crud-outfit-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.crud-no-image {
+  font-size: 32px;
+  color: #3a3a3a;
+}
+
+/* Outfit info */
+.crud-outfit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  flex: 1;
+}
+
+.crud-outfit-id {
+  font-size: 11px;
+  color: #667eea;
+  font-weight: 700;
+  font-family: monospace;
+}
+
+.crud-outfit-name {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.crud-outfit-price {
+  font-size: 13px;
+  color: #f39c12;
+  font-weight: 600;
+}
+
+.crud-outfit-designer {
+  font-size: 11px;
+  color: #9b59b6;
+}
+
+/* Buttons */
+.crud-move-btn,
+.crud-edit-btn,
+.crud-delete-btn,
+.crud-undo-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crud-move-btn {
+  background: #3498db;
+}
+
+.crud-move-btn:hover:not(:disabled) {
+  background: #2980b9;
+  transform: scale(1.1);
+}
+
+.crud-move-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.crud-edit-btn {
+  background: #f39c12;
+}
+
+.crud-edit-btn:hover {
+  background: #e67e22;
+  transform: scale(1.1);
+}
+
+.crud-delete-btn {
+  background: #e74c3c;
+}
+
+.crud-delete-btn:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}
+
+.crud-undo-btn {
+  background: #3498db;
+}
+
+.crud-undo-btn:hover {
+  background: #2980b9;
+  transform: scale(1.1);
+}

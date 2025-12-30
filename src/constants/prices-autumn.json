@@ -1,0 +1,24 @@
+{
+  "1": {
+    "image": "1_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "Nothing here yet",
+    "designer": "autumn designer",
+    "date": "2025-12-20"
+  },
+  "2": {
+    "image": "1_2.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "Nothing here yet",
+    "designer": "autumn designer"
+  },
+  "3": {
+    "image": "1_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "Nothing here yet",
+    "designer": "autumn designer"
+  }
+}

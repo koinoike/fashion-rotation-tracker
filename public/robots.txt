@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://sharamoda.vercel.app/sitemap.xml

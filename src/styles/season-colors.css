@@ -1,0 +1,59 @@
+:root {
+  --season-primary: #667eea;
+  --season-secondary: #b48adf;
+  --season-accent-20: rgba(102, 126, 234, 0.2);
+  --season-accent-15: rgba(102, 126, 234, 0.15);
+  --season-accent-10: rgba(102, 126, 234, 0.1);
+  --season-accent-08: rgba(102, 126, 234, 0.08);
+  --season-accent-06: rgba(102, 126, 234, 0.06);
+  --season-accent-04: rgba(102, 126, 234, 0.04);
+  --season-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body[data-season="winter"] {
+  --season-primary: #667eea;
+  --season-secondary: #764ba2;
+  --season-accent-20: rgba(102, 126, 234, 0.2);
+  --season-accent-15: rgba(102, 126, 234, 0.15);
+  --season-accent-10: rgba(102, 126, 234, 0.1);
+  --season-accent-08: rgba(102, 126, 234, 0.08);
+  --season-accent-06: rgba(102, 126, 234, 0.06);
+  --season-accent-04: rgba(102, 126, 234, 0.04);
+  --season-gradient: linear-gradient(135deg, #6ec5fe 0%, #0852c0 100%);
+}
+
+body[data-season="spring"] {
+  --season-primary: #6b9e78; /* Soft sage green */
+  --season-secondary: #8fb89c; /* Lighter sage */
+  --season-accent-20: rgba(107, 158, 120, 0.2);
+  --season-accent-15: rgba(107, 158, 120, 0.15);
+  --season-accent-10: rgba(107, 158, 120, 0.1);
+  --season-accent-08: rgba(107, 158, 120, 0.08);
+  --season-accent-06: rgba(107, 158, 120, 0.06);
+  --season-accent-04: rgba(107, 158, 120, 0.04);
+  --season-gradient: linear-gradient(135deg, #8fb89c 0%, #6b9e78 100%);
+}
+
+body[data-season="summer"] {
+  --season-primary: #4db8ba; /* Muted turquoise */
+  --season-secondary: #6ccace; /* Lighter muted turquoise */
+  --season-accent-20: rgba(77, 184, 186, 0.2);
+  --season-accent-15: rgba(77, 184, 186, 0.15);
+  --season-accent-10: rgba(77, 184, 186, 0.1);
+  --season-accent-08: rgba(77, 184, 186, 0.08);
+  --season-accent-06: rgba(77, 184, 186, 0.06);
+  --season-accent-04: rgba(77, 184, 186, 0.04);
+  --season-gradient: linear-gradient(135deg, #6ccace 0%, #4db8ba 100%);
+}
+
+body[data-season="autumn"] {
+  --season-primary: #c76d2d; /* Muted warm orange */
+  --season-secondary: #d99a6f; /* Lighter muted orange */
+  --season-accent-20: rgba(199, 129, 79, 0.2);
+  --season-accent-15: rgba(199, 129, 79, 0.15);
+  --season-accent-10: rgba(199, 129, 79, 0.1);
+  --season-accent-08: rgba(199, 129, 79, 0.08);
+  --season-accent-06: rgba(199, 129, 79, 0.06);
+  --season-accent-04: rgba(199, 129, 79, 0.04);
+  --season-gradient: linear-gradient(135deg, #d99a6f 0%, #c76d2d 100%);
+}

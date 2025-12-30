@@ -1,0 +1,161 @@
+.indicators {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 4px;
+  width: auto;
+  margin-inline: auto;
+  padding-bottom: 16px;
+}
+
+.button-left,
+.button-right {
+  background-color: var(--season-accent-20);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.indicator {
+  flex: 0 0 calc((100% - (20 * 4px)) / 21);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  min-width: 0;
+  padding: 0;
+}
+
+.indicator.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: var(--season-primary);
+}
+
+.live-indicator {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 12px;
+  height: 12px;
+  background-color: #16a34a;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.new-indicator {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 12px;
+  height: 12px;
+  background-color: #f59e0b;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+@media (max-width: 639px) {
+  .indicator.active {
+    background-color: var(--season-primary);
+    border-color: var(--season-primary);
+  }
+
+  .indicator:has(.live-indicator) {
+    background-color: white;
+    border-color: #16a34a;
+    border-width: 2px;
+  }
+
+  .indicator.active:has(.live-indicator) {
+    background-color: #16a34a;
+    border-color: #16a34a;
+    border-width: 2px;
+  }
+
+  .indicator:has(.new-indicator) {
+    background-color: white;
+    border-color: #f59e0b;
+    border-width: 2px;
+  }
+
+  .indicator.active:has(.new-indicator) {
+    background-color: #f59e0b;
+    border-color: #f59e0b;
+    border-width: 2px;
+  }
+
+  .live-indicator {
+    display: none;
+  }
+
+  .new-indicator {
+    display: none;
+  }
+}
+
+.indicators-below .indicators {
+  margin-top: 16px;
+}
+
+@media (min-width: 640px) {
+  .button-left,
+  .button-right {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .indicators-overlay .indicator {
+    flex: 0 0 calc((100% - (20 * 8px) - 40px) / 21);
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .indicators-overlay .indicator.active {
+    background-color: var(--season-primary);
+    border-color: var(--season-primary);
+  }
+
+  .indicators-overlay .indicator:hover {
+    border-color: var(--season-primary);
+    transform: scale(1.1);
+  }
+
+  .indicators-overlay .indicator.active {
+    transform: scale(1.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .indicators {
+    gap: 12px;
+  }
+
+  .indicator {
+    flex: 0 0 18px;
+    aspect-ratio: 1;
+  }
+
+  .indicators-overlay .indicator {
+    flex: 0 0 35px;
+  }
+
+  .live-indicator {
+    width: 16px;
+    height: 16px;
+    top: -4px;
+    right: -4px;
+    border-width: 2px;
+  }
+
+  .new-indicator {
+    width: 16px;
+    height: 16px;
+    top: -4px;
+    right: -4px;
+    border-width: 2px;
+  }
+}

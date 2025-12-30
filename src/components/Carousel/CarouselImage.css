@@ -1,0 +1,88 @@
+.background-container {
+  position: relative;
+  width: 100%;
+}
+
+.background-layer {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f9fafb;
+}
+
+.background-previous {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1.2s ease-out;
+  z-index: 1;
+}
+
+.background-current {
+  position: relative;
+  z-index: 2;
+}
+
+/* Gradient reveal animation */
+.gradient-reveal {
+  animation: gradientWipe 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes gradientWipe {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Fallback for older browsers */
+@supports not (clip-path: inset(0 0 0 0)) {
+  .gradient-reveal {
+    animation: gradientWipeFallback 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes gradientWipeFallback {
+    0% {
+      opacity: 0;
+      transform: translateX(-10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+/* === OUTFITS === */
+
+.outfit-overlay {
+  position: absolute;
+  height: auto;
+  pointer-events: none;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 5;
+}
+
+/* === CLIP OUTFITS === */
+
+.image-wrapper.clip-outfits {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* === MOBILE === */
+
+@media (max-width: 639px) {
+  .background-layer {
+    border-radius: 12px 12px 0 0;
+    box-shadow: none;
+  }
+
+  .image-wrapper.clip-outfits {
+    border-radius: 12px 12px 0 0;
+  }
+}

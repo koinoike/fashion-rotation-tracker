@@ -1,0 +1,1106 @@
+{
+  "1": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "SUNNY DAY",
+    "name": [
+      "Hairstyle \"Light Ray\"",
+      "Hoodie with Collar \"Clouds\"",
+      "Boots \"Sun\""
+    ],
+    "designer": "kim seok jin",
+    "date": "2022-03-01",
+    "image": "1.png"
+  },
+  "2": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "SPRING TIME",
+    "name": [
+      "Hairstyle \"Peach Leaf\"",
+      "Hoodie \"Apple Tree Leaves\"",
+      "Boots \"Apple Tree Leaves\"",
+      "Wreath \"Apple Blossoms\""
+    ],
+    "designer": "roli012",
+    "date": "2022-03-01",
+    "image": "2.png"
+  },
+  "3": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "STYLISH SPRING",
+    "name": [
+      "Bandana \"Puffy\"",
+      "Coat \"On a Positive\"",
+      "Chelsea Boots \"Light\"",
+      "Bag \"Checkered\""
+    ],
+    "designer": "almazova5",
+    "date": "2022-03-01",
+    "image": "3.png"
+  },
+  "4": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "PLEASANT IMPRESSION",
+    "name": [
+      "Hairstyle \"Effect\"",
+      "Shirt with Sweater \"Luxury\"",
+      "Sneakers \"Pulse\"",
+      "Glasses \"Ideal\""
+    ],
+    "designer": "prelyusichka",
+    "date": "2022-03-01",
+    "image": "4.png"
+  },
+  "5": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "LADY BIKER",
+    "name": [
+      "Hairstyle \"Flying Away\"",
+      "T-shirt \"Harsh Pattern\"",
+      "Boots \"Motorcycle Chic\""
+    ],
+    "designer": "snegushechka",
+    "date": "2022-03-01",
+    "image": "5.png"
+  },
+  "6": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "MISTER MOTOR",
+    "name": [
+      "Hairstyle \"Shaggy Wanderer\"",
+      "Vest \"Torn Tire\"",
+      "Boots \"Iron Bull\""
+    ],
+    "designer": "snegushechka",
+    "date": "2022-03-01",
+    "image": "6.png"
+  },
+  "7": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "BLOOMING MARCH",
+    "name": [
+      "Hairstyle \"Sunny Braids\"",
+      "Sundress \"Spring\"",
+      "Sneakers \"Spring\"",
+      "Wreath \"Spring Flowers\""
+    ],
+    "designer": "nyasha kotyasha8",
+    "date": "2022-03-01",
+    "image": "7.png"
+  },
+  "8": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "LEPRECHAUN COSTUME",
+    "name": [
+      "Hairstyle \"Pan Rykhli\"",
+      "Jacket \"Ireland\"",
+      "Boots \"Greens\""
+    ],
+    "designer": "jihlava",
+    "date": "2022-03-15",
+    "image": "8.png"
+  },
+  "9": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "PURPLE WAVE",
+    "name": [
+      "Hat \"Eared Tennis Player\"",
+      "Jacket \"Striped Mood\"",
+      "Sneakers \"Tennis King\""
+    ],
+    "designer": "matdtq solo",
+    "date": "2022-03-15",
+    "image": "9.png"
+  },
+  "10": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "ALLERGY SUFFERER",
+    "name": [
+      "Bob Cut \"Allergy Sufferer\"",
+      "Suit \"Allergy Sufferer\"",
+      "Boots \"Allergy Sufferer\"",
+      "Mask \"Allergy Sufferer\""
+    ],
+    "designer": "bigfact",
+    "date": "2022-03-29",
+    "image": "10.png"
+  },
+  "11": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "INTERGALACTICA",
+    "name": [
+      "Hairstyle \"Crystalline Rain\"",
+      "Suit \"Superwave Flash\"",
+      "Glasses \"Infinity\""
+    ],
+    "designer": "shmurka",
+    "date": "2022-03-29",
+    "image": "11.png"
+  },
+  "12": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "I LOVE COCKATIELS",
+    "name": ["Purple Panama Hat", "Shirt with Vest", "Socks \"Cockatiel\""],
+    "designer": "megabulochka",
+    "date": "2022-03-29",
+    "image": "12.png"
+  },
+  "13": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "CYBER SPRING",
+    "name": [
+      "Hairstyle \"Disheveled\"",
+      "Suit \"Cyber Expert\"",
+      "Footwear \"Cyber Sneakers\"",
+      "Glasses \"Hologram\""
+    ],
+    "designer": "zhenya707",
+    "date": "2022-04-26",
+    "image": "13.png"
+  },
+  "14": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "WARM SPRING",
+    "name": [
+      "Hairstyle \"Dark Ponytail\"",
+      "Spring Parka",
+      "Boots with Straps",
+      "Big Glasses"
+    ],
+    "designer": "dismember",
+    "date": "2022-04-26",
+    "image": "14.png"
+  },
+  "15": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "SHARK CALM",
+    "name": [
+      "Hairstyle with Cap \"Blown by Wind\"",
+      "Kimono \"Tranquility\"",
+      "Slippers \"Little Sharks\"",
+      "Glasses \"Drop\""
+    ],
+    "designer": "megabulochka",
+    "date": "2022-04-26",
+    "image": "15.png"
+  },
+  "16": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "SPRING BREATH",
+    "name": [
+      "Hairstyle \"Curly Willow\"",
+      "Shirt \"Tender Spring\"",
+      "Sneakers \"Sprout\"",
+      "Wreath \"Daisy Wonder\""
+    ],
+    "designer": "oniga",
+    "date": "2022-04-26",
+    "image": "16.png"
+  },
+  "17": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "\"TRENDING\"",
+    "name": [
+      "Hairstyle \"Curtains\"",
+      "Jacket \"Freedom\"",
+      "Sneakers with Socks \"Bam\"",
+      "Pendant \"Rumbik\""
+    ],
+    "designer": "prelyusichka",
+    "date": "2022-04-26",
+    "image": "17.png"
+  },
+  "18": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "ARISTOCRAT",
+    "name": [
+      "Hairstyle \"Bone Tale\"",
+      "Blazer \"Business Red\"",
+      "Footwear \"Red on Black\""
+    ],
+    "designer": "matdtq solo",
+    "date": "2022-05-16",
+    "image": "18.png"
+  },
+  "19": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "LOLITA",
+    "name": [
+      "Hairstyle \"Red Moon\"",
+      "Dress \"Sharp Cherry\"",
+      "Boots \"Lolita\""
+    ],
+    "designer": "matdtq solo",
+    "date": "2022-05-17",
+    "image": "19.png"
+  },
+  "20": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "SPRING DAY",
+    "name": [
+      "Hairstyle \"Mullet\"",
+      "Jacket \"Leather Jacket\"",
+      "Velcro Sneakers",
+      "Glasses \"Basic\""
+    ],
+    "designer": "smesharochechka",
+    "date": "2022-05-17",
+    "image": "20.png"
+  },
+  "21": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "EARED SPRING",
+    "name": [
+      "Hairstyle \"Little Ears\"",
+      "Turtleneck with T-shirt",
+      "Flip-flops"
+    ],
+    "designer": "selderesha",
+    "date": "2022-05-17",
+    "image": "21.png"
+  },
+  "22": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "SPRING FRESHNESS",
+    "name": [
+      "Hairstyle \"Fresh Greens\"",
+      "Dress \"Sun Rays\"",
+      "Boots \"Thaw\""
+    ],
+    "designer": "losyash255",
+    "date": "2022-05-17",
+    "image": "22.png"
+  },
+  "23": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "ORANGE PARADISE",
+    "name": [
+      "Hairstyle \"Fruit Drink\"",
+      "T-shirt \"Citrus Mood\"",
+      "Footwear \"Garden Juice\""
+    ],
+    "designer": "master",
+    "date": "2022-05-31",
+    "image": "23.png"
+  },
+  "24": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "BEACH PARTY",
+    "name": [
+      "Hairstyle \"Mint Cocktail\"",
+      "Bracelet \"Scrunchie\"",
+      "Top \"Dancing\"",
+      "Flip-flops \"Shiny\""
+    ],
+    "designer": "miuna",
+    "date": "2022-05-31",
+    "image": "24.png"
+  },
+  "25": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "AZURE NIGHT",
+    "name": [
+      "Hairstyle \"Lunar Breeze\"",
+      "Jacket \"Azure\"",
+      "Sneakers \"Night\"",
+      "Glasses \"Night\""
+    ],
+    "designer": "nyasha kotyasha8",
+    "date": "2022-05-31",
+    "image": "25.png"
+  },
+  "26": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "TOURIST IN ASIA",
+    "name": [
+      "Hairstyle \"Red Split\"",
+      "Glasses \"Different View\"",
+      "T-shirt \"Hanami\"",
+      "Geta \"Futurism\""
+    ],
+    "designer": "miuna",
+    "date": "2022-05-31",
+    "image": "26.png"
+  },
+  "27": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "POLARIS",
+    "name": [
+      "Hairstyle \"Polaris\"",
+      "Jacket \"White Night\"",
+      "Boots \"Polar Day\"",
+      "Horn-rimmed Glasses"
+    ],
+    "designer": "ocelot3",
+    "date": "2022-05-31",
+    "image": "27.png"
+  },
+  "28": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "SUMMER CHARMER",
+    "name": [
+      "Hairstyle \"Charmer\"",
+      "Shirt \"Daisies\"",
+      "Roller Skates \"Sunrise\""
+    ],
+    "designer": "selderesha",
+    "date": "2022-05-31",
+    "image": "28.png"
+  },
+  "29": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "THE MOST BERRY",
+    "name": [
+      "Hairstyle \"Strawberry Shine\"",
+      "Dress \"Strawberry Cocktail\"",
+      "Footwear \"Strawberry Shoes\"",
+      "Accessory \"Mint Wreath\""
+    ],
+    "designer": "dismember",
+    "date": "2022-05-31",
+    "image": "29.png"
+  },
+  "30": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "RED BEAUTY",
+    "name": [
+      "Hairstyle \"Little Ray\"",
+      "Dress \"Red Beauty\"",
+      "Shoes \"Red Summer\""
+    ],
+    "designer": "selderesha",
+    "date": "2022-05-31",
+    "image": "30.png"
+  },
+  "31": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "TENDER CHERRY",
+    "name": [
+      "Hairstyle \"Little Leaf\"",
+      "Sweater \"Cherry\"",
+      "Boots \"Twig\""
+    ],
+    "designer": "Kim Seok Jin",
+    "date": "2023-04-11",
+    "image": "31.png"
+  },
+  "32": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "90S IDOL",
+    "name": [
+      "Hairstyle \"Little Devil\"",
+      "Sweater \"Nirvana\"",
+      "Boots \"Grunge\"",
+      "Guitar \"Rock Forever\""
+    ],
+    "designer": "Kim Seok Jin",
+    "date": "2023-04-11",
+    "image": "32.png"
+  },
+  "33": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "TENDER MAY",
+    "name": ["Beret \"Pitcher\"", "Sweatshirt \"May\"", "Sneakers \"Paws\""],
+    "designer": "Za_Putina",
+    "date": "2023-04-11",
+    "image": "33.png"
+  },
+  "34": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "SPRING BREATH",
+    "name": [
+      "Hat with Hairstyle \"Rain\"",
+      "Blazer with Dress \"Scent of Spring\"",
+      "Shoes \"Melted\""
+    ],
+    "designer": "Kabanka",
+    "date": "2023-04-25",
+    "image": "34.png"
+  },
+  "35": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "SHARASTREET OUTFIT!",
+    "name": [
+      "Hairstyle \"Playful Tails\"",
+      "Long Sleeve with Straps",
+      "Sneakers \"Greyness\"",
+      "Glasses \"Sportstyle\""
+    ],
+    "designer": "Nova",
+    "date": "2023-04-25",
+    "image": "35.png"
+  },
+  "36": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "REST TIME",
+    "name": [
+      "Hairstyle \"Little Nut\"",
+      "Sweater \"Oversize\"",
+      "Boots \"Untied Laces\""
+    ],
+    "designer": "Pelmen229",
+    "date": "2023-04-25",
+    "image": "36.png"
+  },
+  "37": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "SHALL WE GO FOR A WALK?",
+    "name": [
+      "Hairstyle with Ponytail \"Bug\"",
+      "Blouse with Vest",
+      "Boots with Knee Socks",
+      "Accessory \"Squeaky Clips\""
+    ],
+    "designer": "Lepestochka",
+    "date": "2023-04-25",
+    "image": "37.png"
+  },
+  "38": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "BRIGHT DROPS",
+    "name": [
+      "Hairstyle \"Little Sun\"",
+      "Shirt \"Bright Spring\"",
+      "Sneakers \"Rays\"",
+      "Wreath \"Drops\""
+    ],
+    "designer": "Nyasha Kotyasha8",
+    "date": "2023-05-09",
+    "image": "38.png"
+  },
+  "39": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "BRIGHT BOHO",
+    "name": [
+      "Hairstyle \"Messy\"",
+      "T-shirt with Scarf",
+      "Moccasins \"Lime\"",
+      "Bag \"Dream Catcher\""
+    ],
+    "designer": "Fyami",
+    "date": "2023-05-09",
+    "image": "39.png"
+  },
+  "40": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "DAY BY DAY",
+    "name": [
+      "Hairstyle \"Latecomer\"",
+      "Windbreaker \"Serious\"",
+      "Boots \"Airy\""
+    ],
+    "designer": "Cherila1",
+    "date": "2023-05-09",
+    "image": "40.png"
+  },
+  "41": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "SHARASTREET OUTFIT!",
+    "name": [
+      "Hat \"Looker\"",
+      "Anorak \"Dark\"",
+      "Sneakers \"Sporty\"",
+      "Fanny Pack"
+    ],
+    "designer": "Nova",
+    "date": "2023-05-09",
+    "image": "41.png"
+  },
+  "42": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "PURPLE FLOWERS",
+    "name": [
+      "Hairstyle \"Purple Flower\"",
+      "Sweater \"Spring\"",
+      "Sneakers \"Fluttering Butterflies\"",
+      "Wreath \"Spring Mood\""
+    ],
+    "designer": "Khitryisyaomi",
+    "date": "2023-05-09",
+    "image": "42.png"
+  },
+  "43": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "FIRST GREENERY",
+    "name": [
+      "Ponytail \"Spring\"",
+      "Coat \"Clear Sky\"",
+      "Rubber Boots",
+      "Bag \"Smesharik\""
+    ],
+    "designer": "medwezhutko",
+    "date": "2024-03-12",
+    "image": "43.png"
+  },
+  "44": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "SPRING AWAKENING",
+    "name": [
+      "Hairstyle \"Thaw\"",
+      "Blazer \"Floral Warmth\"",
+      "Boots \"Awakening\"",
+      "Wreath \"Bright Colors\""
+    ],
+    "designer": "nyasha kotyasha8",
+    "date": "2024-03-12",
+    "image": "44.png"
+  },
+  "45": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "BRIGHT SPRING",
+    "name": [
+      "Hairstyle \"Ascorbic Acid\"",
+      "Shirt \"Tag\"",
+      "Sneakers \"Bright Walk\""
+    ],
+    "designer": "malenki gnom",
+    "date": "2024-03-12",
+    "image": "45.png"
+  },
+  "46": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "THAW",
+    "name": [
+      "Hairstyle \"Thawed Patch\"",
+      "Shirt \"Thaw\"",
+      "Sneakers \"Thaw\"",
+      "Glasses \"Thaw\""
+    ],
+    "designer": "medwezhutko",
+    "date": "2024-03-12",
+    "image": "46.png"
+  },
+  "47": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "FIRST FLOWERS",
+    "name": [
+      "Hairstyle with Bow \"First Bloom\"",
+      "Dress \"First Flowers\"",
+      "Shoes \"First Bloom\""
+    ],
+    "designer": "medwezhutko",
+    "date": "2024-03-12",
+    "image": "47.png"
+  },
+  "48": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "FIRST RAY",
+    "name": ["Lampshade Hat", "Overalls \"First Ray\"", "Sneakers \"Sunset\""],
+    "designer": "kabanka",
+    "date": "2024-04-02",
+    "image": "48.png"
+  },
+  "49": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "CHERRY SUN",
+    "name": [
+      "Hairstyle \"Cherry Sun\"",
+      "Jacket \"Cherry Sun\"",
+      "Boots \"Cherry Sun\""
+    ],
+    "designer": "expert I",
+    "date": "2024-04-02",
+    "image": "49.png"
+  },
+  "50": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "SPROUT",
+    "name": [
+      "Hat \"Green Bark\"",
+      "Jacket \"Wooden Armor\"",
+      "Footwear \"Creaky Branches\""
+    ],
+    "designer": "snegushechka",
+    "date": "2024-04-02",
+    "image": "50.png"
+  },
+  "51": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "MAGISTRATE",
+    "name": [
+      "Hat \"Magistrate\"",
+      "Robe with Scarf \"Magistrate\"",
+      "Boots \"Magistrate\""
+    ],
+    "designer": "kabanka",
+    "date": "2024-04-02",
+    "image": "51.png"
+  },
+  "52": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "BUTTERFLY",
+    "name": [
+      "Hairstyle \"Dawn\"",
+      "Tank Top with Wings \"My Butterfly\"",
+      "Footwear \"Winged\"",
+      "Daisy Wreath"
+    ],
+    "designer": "kabanka",
+    "date": "2024-04-16",
+    "image": "52.png"
+  },
+  "53": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "FOOTBALL FAN",
+    "name": ["Hat \"Sampotyaga\"", "Sweatshirt \"Fan\"", "Sneakers \"Fan\""],
+    "designer": "bibilyapupik",
+    "date": "2024-04-16",
+    "image": "53.png"
+  },
+  "54": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "FASHIONABLE FLORIST",
+    "name": [
+      "Hairstyle \"Mint Ponytails\"",
+      "Dress with Apron \"Sprout\"",
+      "Boots \"Bitter Chocolate\""
+    ],
+    "designer": "shino_osaru",
+    "date": "2024-04-16",
+    "image": "54.png"
+  },
+  "55": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "KNOWLEDGE AND BEAUTY",
+    "name": [
+      "Hairstyle \"Blueness\"",
+      "Shirt \"Contrast\"",
+      "Boots \"Lapis Lazuli\"",
+      "Headband \"Twigs\""
+    ],
+    "designer": "nyasha kotyasha8",
+    "date": "2024-04-16",
+    "image": "55.png"
+  },
+  "56": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "SORCERESS",
+    "name": [
+      "Hairstyle \"Braid\"",
+      "Dress with Ornament",
+      "Comfortable Bast Shoes",
+      "Basket with Snowdrops"
+    ],
+    "designer": "radians",
+    "date": "2024-04-16",
+    "image": "56.png"
+  },
+  "57": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "SIR CARAMEL",
+    "name": [
+      "Hairstyle \"Fresh\"",
+      "Candy Cloak",
+      "Caramel Boots",
+      "Cane \"Lollipop\""
+    ],
+    "designer": "losyash255",
+    "date": "2024-04-16",
+    "image": "57.png"
+  },
+  "58": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "OBSERVER",
+    "name": [
+      "Hat \"Observer\"",
+      "Robe \"Observer on Duty\"",
+      "Boots \"Stardust\"",
+      "Glasses \"Liquid Space\""
+    ],
+    "designer": "losyash255",
+    "date": "2024-05-07",
+    "image": "58.png"
+  },
+  "59": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "BUTTERFLY EFFECT",
+    "name": [
+      "Hairstyle \"Butterfly Effect\"",
+      "Dress \"Airiness\"",
+      "Shoes \"Butterfly Effect\"",
+      "Glasses \"Wings\""
+    ],
+    "designer": "TRISHA1408",
+    "date": "2024-05-07",
+    "image": "59.png"
+  },
+  "60": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "REACHING FOR THE SUN",
+    "name": [
+      "Hairstyle \"Curls with Sunflower\"",
+      "Suit \"Sun Glints\"",
+      "Sandals \"Sun Behind a Cloud\"",
+      "Glasses \"Sun All Year Round\""
+    ],
+    "designer": "byoksi22",
+    "date": "2024-05-07",
+    "image": "60.png"
+  },
+  "61": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "NOISY PARTY",
+    "name": [
+      "Hairstyle \"Party\"",
+      "Sweater \"Celebration\"",
+      "Sneakers \"Shall We Make Noise?\""
+    ],
+    "designer": "nyasha kotyasha8",
+    "date": "2025-03-18",
+    "image": "61.png"
+  },
+  "62": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "SLEEPY KINGDOM",
+    "name": [
+      "Hat \"Got Up on the Wrong Side\"",
+      "Jacket \"There and Back\"",
+      "Bread Slippers"
+    ],
+    "designer": "kabanka",
+    "date": "2025-03-18",
+    "image": "62.png"
+  },
+  "63": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "DAISY SUNSET",
+    "name": [
+      "Hairstyle \"Daisies and Ears\"",
+      "Sweater \"Daisy at Sunset\"",
+      "Sneakers \"Daisy Field\"",
+      "Glasses \"Daisy Sunset\""
+    ],
+    "designer": "olina",
+    "date": "2025-03-18",
+    "image": "63.png"
+  },
+  "64": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "DIDN'T EVEN TRY",
+    "name": [
+      "Hairstyle \"Fashionable Slob\"",
+      "Sweatshirt \"Put It On and Go\"",
+      "Sneakers \"Comfort and Style\"",
+      "Glasses \"Fashionable Slob\""
+    ],
+    "designer": "smeshik010",
+    "date": "2025-03-18",
+    "image": "64.png"
+  },
+  "65": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "BIG EARS",
+    "name": [
+      "Hairstyle \"Ears\"",
+      "Cloak \"Crimson\"",
+      "Sneakers \"First Ray\"",
+      "Umbrella \"Red-haired\""
+    ],
+    "designer": "kabanka",
+    "date": "2025-03-18",
+    "image": "65.png"
+  },
+  "66": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "DAWN GLOW",
+    "name": [
+      "Hairstyle \"Dawn Glow\"",
+      "Sundress \"Dawn Glow\"",
+      "Shoes \"Dawn Glow\""
+    ],
+    "designer": "nyanko",
+    "date": "2025-03-18",
+    "image": "66.png"
+  },
+  "67": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "FROSTY BERRY",
+    "name": [
+      "Beret and Braids \"Cranberry\"",
+      "Coat \"Warming Cranberry Juice\"",
+      "Boots \"Frost\""
+    ],
+    "designer": "srozhkami",
+    "date": "2025-04-01",
+    "image": "67.png"
+  },
+  "68": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "METEORIC GUY",
+    "name": [
+      "Hairstyle \"Flaming\"",
+      "Cloak \"Not from This Planet\"",
+      "Boots \"From a Meteor\"",
+      "Glasses \"Comets\""
+    ],
+    "designer": "losyash255",
+    "date": "2025-04-01",
+    "image": "68.png"
+  },
+  "69": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "PAINTER",
+    "name": [
+      "Beret and Hairstyle \"Curious\"",
+      "Overalls \"In a Burst of Feelings\"",
+      "Boots \"Searching for Inspiration\""
+    ],
+    "designer": "dashkevich1997",
+    "date": "2025-04-01",
+    "image": "69.png"
+  },
+  "70": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "WIND OF CHANGE",
+    "name": [
+      "Hairstyle \"Punk Hedgehog\"",
+      "Vest \"Denim Rebel\"",
+      "Footwear \"Spiked Boots\"",
+      "Guitar \"Wind of Change\""
+    ],
+    "designer": "srozhkami",
+    "date": "2025-04-15",
+    "image": "70.png"
+  },
+  "71": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "BRIGHT SPRING",
+    "name": [
+      "Hairstyle \"Ringing Brook\"",
+      "Jacket \"Snowdrop\"",
+      "Sandals \"Sprout\"",
+      "Glasses \"Bright Spring\""
+    ],
+    "designer": "tategami aoi",
+    "date": "2025-04-15",
+    "image": "71.png"
+  },
+  "72": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "TREE SPIRIT",
+    "name": [
+      "Hat \"Stump-Stump\"",
+      "Jacket \"Tree Spirit\"",
+      "Boots \"Wooden Steps\""
+    ],
+    "designer": "sima20111",
+    "date": "2025-04-15",
+    "image": "72.png"
+  },
+  "73": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "TURQUOISE RHYTHMS",
+    "name": [
+      "Cap \"Street Whirl\"",
+      "Jacket \"Musical Surf\"",
+      "Sneakers \"Running on Waves\"",
+      "Accessory \"Boombox\""
+    ],
+    "designer": "srozhkami",
+    "date": "2025-04-29",
+    "image": "73.png"
+  },
+  "74": {
+    "price": "480",
+    "currency": "coins",
+    "setName": "LILIES OF THE VALLEY",
+    "name": [
+      "Hairstyle \"Lilies of the Valley\"",
+      "Dress \"Bud\"",
+      "Boots \"White Petals\"",
+      "Umbrella \"Lily of the Valley\""
+    ],
+    "designer": "avokado4",
+    "date": "2025-04-29",
+    "image": "74.png"
+  },
+  "75": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "ENJOY YOUR STEAM!",
+    "name": [
+      "Broom Hat \"Sauna\"",
+      "Bathrobe \"Enjoy Your Steam!\"",
+      "Slippers \"Trip to the Sauna\"",
+      "Glasses \"Fogged Up\""
+    ],
+    "designer": "expert i",
+    "date": "2025-04-29",
+    "image": "75.png"
+  },
+  "76": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "CACTUS",
+    "name": [
+      "Hat \"Blooming Cactus\"",
+      "Prickly Sweater",
+      "Boots \"Prickly Legs\""
+    ],
+    "designer": "gleb zeus",
+    "date": "2024-05-14",
+    "image": "76.png"
+  },
+  "77": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "TENDER ROSE",
+    "name": [
+      "Hat \"Spring Charm\"",
+      "Dress \"Blooming Tenderness\"",
+      "Shoes \"May Rose\""
+    ],
+    "designer": "srozhkami",
+    "date": "2024-05-14",
+    "image": "77.png"
+  },
+  "78": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "GENTLEMAN",
+    "name": [
+      "Hairstyle \"Golden Style\"",
+      "Blazer with Shirt \"Gold\"",
+      "Business Shoes"
+    ],
+    "designer": "kapibaryka",
+    "date": "2024-05-14",
+    "image": "78.png"
+  },
+  "79": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "SOAPY DAISY",
+    "name": [
+      "Cap \"Number One\"",
+      "Shirt \"Relaxation\"",
+      "Sneakers \"Good Enough\""
+    ],
+    "designer": "kapibaryka",
+    "date": "2025-05-20",
+    "image": "79.png"
+  },
+  "80": {
+    "price": "360",
+    "currency": "coins",
+    "setName": "COUNTRY",
+    "name": ["Hat \"Cowboy Chic\"", "Dress \"Denim\"", "Boots \"Sultry\""],
+    "designer": "golupchik1",
+    "date": "2025-05-20",
+    "image": "80.png"
+  },
+  "81": {
+    "price": "40",
+    "currency": "rumb",
+    "setName": "MINT HEART",
+    "name": [
+      "Hairstyle \"Spot\"",
+      "Jacket with Turtleneck \"Bunny\"",
+      "Boots \"Mint Heart\"",
+      "Glasses \"Freshness\""
+    ],
+    "designer": "madarrt",
+    "date": "2025-05-20",
+    "image": "81.png"
+  },
+  "82": {
+    "image": "82.png",
+    "setName": "CREATIVE",
+    "price": "40",
+    "currency": "rumb",
+    "name": [
+      "Hairstyle \"Grey Curls\"",
+      "Sweater-Shirt",
+      "Boots \"Bright Laces\"",
+      "Glasses \"Golden Chains\""
+    ],
+    "designer": "apottik",
+    "date": "2022-05-17"
+  },
+  "83": {
+    "image": "83.png",
+    "setName": "GENTLEMAN",
+    "price": "480",
+    "currency": "coins",
+    "name": [
+      "Hairstyle \"Snow-White\"",
+      "Suit \"Gentleman\"",
+      "Shoes \"On Business\"",
+      "Rose \"For Milady\""
+    ],
+    "designer": "yumi chuze",
+    "date": "2022-04-26"
+  }
+}

@@ -1,0 +1,288 @@
+/* src/components/OutfitCRUD/components/StagingArea.css - UNIFIED WITH PODIUM CARDS */
+
+.staging-area {
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 12px 24px;
+  box-shadow: none;
+}
+
+.staging-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.staging-header h3 {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.staging-header h3::before {
+  content: "📦";
+  font-size: 14px;
+}
+
+.staging-count {
+  background: #667eea;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.staging-content {
+  min-height: 100px;
+  background: transparent;
+  border-radius: 6px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.staging-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  color: #666;
+  text-align: center;
+}
+
+.staging-empty p {
+  margin: 0 0 4px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #999;
+}
+
+.staging-empty small {
+  font-size: 11px;
+  color: #666;
+}
+
+.staging-grid {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 4px 0;
+}
+
+.staging-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.staging-grid::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 3px;
+}
+
+.staging-grid::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 3px;
+}
+
+.staging-grid::-webkit-scrollbar-thumb:hover {
+  background: #5568d3;
+}
+
+/* UNIFIED STAGING CARD - MATCHES PODIUM CARD STYLE */
+.staged-outfit-card {
+  position: relative;
+  background: #1a1a1a;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  padding: 12px;
+  min-width: 200px;
+  flex-shrink: 0;
+  cursor: grab;
+  transition: all 0.2s ease;
+  display: flex;
+  gap: 12px;
+}
+
+.staged-outfit-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.staged-outfit-card:active {
+  cursor: grabbing;
+  transform: scale(0.98);
+}
+
+/* Left side: Buttons (matching podium cards) */
+.staged-outfit-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-end;
+  min-width: 36px;
+}
+
+.staged-outfit-edit,
+.staged-outfit-remove {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  position: static;
+}
+
+.staged-outfit-edit {
+  background: #f39c12;
+}
+
+.staged-outfit-edit:hover {
+  background: #e67e22;
+  transform: scale(1.1);
+}
+
+.staged-outfit-remove {
+  background: #e74c3c;
+}
+
+.staged-outfit-remove:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Image (matching podium cards) */
+.staged-outfit-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.staged-outfit-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.staged-outfit-placeholder {
+  color: #3a3a3a;
+  font-size: 32px;
+}
+
+/* Info (matching podium cards) */
+.staged-outfit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  flex: 1;
+  text-align: left;
+}
+
+.staged-outfit-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.staged-outfit-price {
+  font-size: 13px;
+  color: #f39c12;
+  font-weight: 600;
+  margin: 0;
+}
+
+.staged-outfit-designer {
+  font-size: 11px;
+  color: #9b59b6;
+  font-style: normal;
+  margin: 0;
+}
+
+.staged-outfit-items-count {
+  font-size: 11px;
+  color: #667eea;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  display: block;
+  font-weight: 700;
+  font-family: monospace;
+}
+
+/* Actions row */
+.staging-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-add-outfit {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-add-outfit:hover {
+  background: #5568d3;
+  transform: translateY(-1px);
+}
+
+.btn-add-outfit span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.staging-hint {
+  color: #999;
+  font-size: 11px;
+  flex: 1;
+  text-align: right;
+}
+
+/* Drag states */
+.staging-area.drag-over {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.3);
+}
+
+.staging-content.drag-over {
+  background: rgba(102, 126, 234, 0.1);
+  border: 2px dashed #667eea;
+}

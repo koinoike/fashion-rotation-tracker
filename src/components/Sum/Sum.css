@@ -1,0 +1,25 @@
+.sum-footer {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: var(--season-accent-10);
+  border-top: 2px solid var(--season-primary);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.sum-footer p {
+  margin: 0;
+}
+
+.sum-footer a {
+  color: var(--season-primary);
+  text-decoration: none;
+}
+
+.sum-footer a:hover {
+  text-decoration: underline;
+}

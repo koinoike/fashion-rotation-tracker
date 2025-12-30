@@ -1,0 +1,234 @@
+/* src/components/OutfitCRUD/OutfitCRUD.css - FIXED SCROLL */
+
+.outfit-crud-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.outfit-crud {
+  background: #1a1a1a;
+  border-radius: 12px;
+  width: 95vw;
+  max-width: 1400px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  color: #e0e0e0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+  overflow: hidden; /* ← Это остаётся для header/footer */
+}
+
+/* Header */
+.outfit-crud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #333;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  flex-shrink: 0; /* ← Не сжимается */
+}
+
+.outfit-crud-header h2 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.close-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+/* Season selector */
+.season-selector {
+  display: flex;
+  gap: 8px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #333;
+  flex-shrink: 0; /* ← Не сжимается */
+}
+
+.season-selector button {
+  padding: 8px 16px;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.season-selector button:hover {
+  border-color: #667eea;
+  background: #333;
+}
+
+.season-selector button.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+/* Stats bar */
+.stats-bar {
+  display: flex;
+  gap: 24px;
+  padding: 12px 24px;
+  background: #2a2a2a;
+  border-bottom: 1px solid #333;
+  font-size: 13px;
+  color: #888;
+  flex-shrink: 0; /* ← Не сжимается */
+}
+
+.stats-bar strong {
+  color: #667eea;
+  margin-left: 4px;
+}
+
+/* SCROLLABLE CONTENT WRAPPER - НОВОЕ! */
+.outfit-crud-content {
+  flex: 1;
+  overflow-y: auto; /* ← ВОТ ТУТ СКРОЛЛ! */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Loading/Error states */
+.loading-state,
+.error-state {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.loading-state {
+  color: #888;
+}
+
+.error-state {
+  color: #e74c3c;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #3a3a3a;
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-state button {
+  padding: 8px 24px;
+  background: #667eea;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Podiums grid */
+.podiums-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 24px;
+  min-height: min-content; /* ← Растёт по контенту */
+}
+
+.podium-column {
+  background: #2a2a2a;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px; /* ← Минимальная высота */
+}
+
+.podium-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #333;
+  background: #252525;
+  flex-shrink: 0;
+}
+
+.podium-header h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.podium-header span {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Outfits list */
+.outfits-list {
+  flex: 1;
+  overflow-y: visible; /* ← Позволяем расти */
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Scrollbar для главного контейнера */
+.outfit-crud-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.outfit-crud-content::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.outfit-crud-content::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 5px;
+}
+
+.outfit-crud-content::-webkit-scrollbar-thumb:hover {
+  background: #5568d3;
+}

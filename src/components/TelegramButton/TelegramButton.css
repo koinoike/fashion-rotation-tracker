@@ -1,0 +1,69 @@
+/* src/components/TelegramButton/TelegramButton.css */
+
+.telegram-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  background-color: white;
+  color: #0088cc;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.telegram-button:hover {
+  background-color: #f0faff;
+  border-color: #0088cc;
+}
+
+.telegram-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+/* Variant: compact (for header mobile) */
+.telegram-button--compact {
+  padding: 2px 6px;
+  font-size: 11px;
+  gap: 4px;
+}
+
+.telegram-button--compact .telegram-icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* Variant: footer (inline with text) */
+.telegram-button--footer {
+  padding: 2px 6px;
+  font-size: 13px;
+  border: 1px solid #0088cc;
+}
+
+/* Variant: header desktop */
+.telegram-button--header {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.telegram-button--header .telegram-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Variant: icon only */
+.telegram-button--icon-only {
+  padding: 6px;
+  gap: 0;
+}
+
+.telegram-button--icon-only .telegram-icon {
+  width: 18px;
+  height: 18px;
+}

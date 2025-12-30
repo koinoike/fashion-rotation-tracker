@@ -1,0 +1,505 @@
+/* === WRAPPER === */
+
+.carousel-wrapper {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-image-container {
+  position: relative;
+  overflow: visible;
+}
+
+/* === INDICATORS CORE === */
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+.indicator {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0;
+  overflow: visible;
+}
+
+.indicator.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: var(--season-primary);
+}
+
+/* Single indicator on right - green for LIVE only */
+.live-indicator {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  background-color: #16a34a;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 10;
+}
+
+/* Single indicator on right - pink for NEW only */
+.new-indicator {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  background-color: #ec4899;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 10;
+}
+
+/* When BOTH live AND new - single half-green/half-pink dot on right */
+.indicator:has(.live-indicator):has(.new-indicator) .live-indicator {
+  background: linear-gradient(90deg, #16a34a 50%, #ec4899 50%);
+  z-index: 11;
+}
+
+/* Hide the new-indicator when both are present (we show it in live-indicator) */
+.indicator:has(.live-indicator):has(.new-indicator) .new-indicator {
+  display: none;
+}
+
+/* === INDICATORS POSITIONING === */
+
+.indicators-overlay {
+  display: none;
+}
+
+.indicators-below {
+  display: block;
+}
+
+/* === IMAGE & TEXT STYLES === */
+
+.image-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title-block {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  z-index: 20;
+  padding: 8px 12px;
+}
+
+.live-badge {
+  background-color: #16a34a;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+.new-badge {
+  background-color: #ec4899;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+.countdown,
+.inactive-message {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  padding: 0 12px 8px;
+}
+
+.countdown-time {
+  font-weight: bold;
+  color: var(--season-primary);
+  font-size: 16px;
+}
+
+.inactive-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  z-index: 15;
+  border-radius: 12px;
+}
+
+/* === MOBILE === */
+
+@media (max-width: 639px) {
+  .carousel-wrapper {
+    border-radius: 12px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .indicators {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    justify-content: safe center;
+    padding: 12px 20px;
+  }
+
+  .indicators::-webkit-scrollbar {
+    display: none;
+  }
+
+  .indicator {
+    flex: 0 0 14px;
+    scroll-snap-align: center;
+  }
+
+  /* Live indicator styling for mobile - hide dots, show with border */
+  .indicator:has(.live-indicator) {
+    background-color: white;
+    border-color: #16a34a;
+    border-width: 2px;
+  }
+
+  .indicator.active:has(.live-indicator) {
+    background-color: #16a34a;
+    border-color: #16a34a;
+    border-width: 2px;
+  }
+
+  /* New indicator styling for mobile */
+  .indicator:has(.new-indicator) {
+    background-color: white;
+    border-color: #ec4899;
+    border-width: 2px;
+  }
+
+  .indicator.active:has(.new-indicator) {
+    background-color: #ec4899;
+    border-color: #ec4899;
+    border-width: 2px;
+  }
+
+  /* Both live AND new on mobile - half green/half pink */
+  .indicator:has(.live-indicator):has(.new-indicator) {
+    background: linear-gradient(90deg, #16a34a 50%, #ec4899 50%);
+    border-color: #16a34a;
+    border-width: 2px;
+  }
+
+  .indicator.active:has(.live-indicator):has(.new-indicator) {
+    background: linear-gradient(90deg, #16a34a 50%, #ec4899 50%);
+    border-color: #16a34a;
+    border-width: 2px;
+  }
+
+  .live-indicator,
+  .new-indicator {
+    display: none;
+  }
+
+  .image-wrapper {
+    margin: -8px -8px 0 -8px;
+    width: calc(100% + 16px);
+  }
+
+  .image {
+    border-radius: 12px 12px 0 0;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .image-block {
+    gap: 8px;
+  }
+
+  .title-block {
+    position: relative;
+    color: #333;
+    text-shadow: none;
+    padding: 6px 12px;
+  }
+
+  .countdown,
+  .inactive-message {
+    position: relative;
+    color: #666;
+    text-shadow: none;
+    padding: 0 12px 6px;
+  }
+
+  .countdown-time {
+    color: var(--season-primary);
+  }
+
+  .inactive-overlay {
+    border-radius: 12px 12px 0 0;
+  }
+}
+
+/* === TABLET === */
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .carousel-wrapper {
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .carousel-image-container {
+    border-radius: 12px;
+    overflow: visible;
+    position: relative;
+  }
+
+  .indicators-overlay {
+    display: flex;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 20px;
+    overflow: visible;
+  }
+
+  .indicators-below {
+    display: none;
+  }
+
+  .indicator {
+    flex: 0 1 35px;
+    min-width: 8px;
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+  }
+
+  .indicator.active {
+    transform: scale(1.2);
+  }
+
+  /* Half green/half pink for both live AND new */
+  .indicators-overlay
+    .indicator:has(.live-indicator):has(.new-indicator)
+    .live-indicator {
+    background: linear-gradient(90deg, #16a34a 50%, #ec4899 50%);
+  }
+
+  .indicators-overlay
+    .indicator:has(.live-indicator):has(.new-indicator)
+    .new-indicator {
+    display: none;
+  }
+
+  .live-indicator,
+  .new-indicator {
+    width: 16px;
+    height: 16px;
+    border-width: 2px;
+    top: -4px;
+    right: -4px;
+  }
+
+  .image-wrapper {
+    position: relative;
+  }
+
+  .title-block {
+    color: white;
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    z-index: 110;
+  }
+
+  .countdown,
+  .inactive-message {
+    bottom: 18%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    z-index: 110;
+  }
+
+  .countdown-time {
+    color: #ffffff;
+    font-size: 28px;
+  }
+}
+
+/* === DESKTOP === */
+
+@media (min-width: 1024px) {
+  .carousel-wrapper {
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .carousel-image-container {
+    border-radius: 12px;
+    overflow: visible;
+    position: relative;
+  }
+
+  .indicators-overlay {
+    display: flex;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 20px;
+    overflow: visible;
+  }
+
+  .indicators-below {
+    display: none;
+  }
+
+  .indicator {
+    flex: 0 0 35px;
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+  }
+
+  .indicator.active {
+    transform: scale(1.2);
+  }
+
+  /* Half green/half pink for both live AND new */
+  .indicators-overlay
+    .indicator:has(.live-indicator):has(.new-indicator)
+    .live-indicator {
+    background: linear-gradient(90deg, #16a34a 50%, #ec4899 50%);
+  }
+
+  .indicators-overlay
+    .indicator:has(.live-indicator):has(.new-indicator)
+    .new-indicator {
+    display: none;
+  }
+
+  .live-indicator,
+  .new-indicator {
+    width: 16px;
+    height: 16px;
+    border-width: 2px;
+    top: -4px;
+    right: -4px;
+  }
+
+  .image-wrapper {
+    position: relative;
+  }
+
+  .title-block {
+    color: white;
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    z-index: 110;
+    width: auto;
+    max-width: 90%;
+  }
+
+  .live-badge,
+  .new-badge {
+    font-size: clamp(12px, 1.8vw, 14px);
+    padding: 6px 14px;
+  }
+
+  .countdown,
+  .inactive-message {
+    bottom: 18%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    padding: 0;
+    z-index: 110;
+  }
+
+  .countdown-time {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}

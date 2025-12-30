@@ -1,0 +1,109 @@
+/* ================================================
+   SPACING SYSTEM - Single source of truth
+   Location: src/styles/spacing.css
+   ================================================ */
+
+/* ================================================
+   HEADER - Always visible
+   ================================================ */
+.header {
+  margin-bottom: 12px;
+}
+
+/* ================================================
+   CAROUSEL - Always visible
+   ================================================ */
+.carousel-wrapper {
+  margin-bottom: 16px;
+}
+
+/* ================================================
+   MAIN LAYOUT - Conditional spacing based on content
+   ================================================ */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Vertical gap between ItemDetail and Calculator */
+}
+
+/* When main-layout has content, add bottom spacing */
+.main-layout:not(:empty) {
+  margin-bottom: 16px;
+}
+
+/* Individual component margins removed - using gap instead */
+.item-detail:not(.export-mode) {
+  margin-bottom: 0;
+}
+
+.calculator {
+  margin-bottom: 0;
+}
+
+/* ================================================
+   CATALOG & FOOTER
+   ================================================ */
+.footer {
+  margin-top: 16px;
+}
+
+/* ================================================
+   RESPONSIVE ADJUSTMENTS
+   ================================================ */
+@media (min-width: 640px) {
+  .header {
+    margin-bottom: 16px;
+  }
+
+  .carousel-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .main-layout {
+    gap: 20px;
+  }
+
+  .main-layout:not(:empty) {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .carousel-wrapper {
+    margin-bottom: 24px;
+  }
+
+  .main-layout {
+    flex-direction: row;
+    gap: 20px; /* Horizontal gap between ItemDetail and Calculator */
+    align-items: flex-start;
+  }
+
+  .main-layout:not(:empty) {
+    margin-bottom: 24px;
+  }
+
+  /* ✅ FIX: Prevent children from overflowing */
+  .main-layout > * {
+    flex: 1;
+    min-width: 0; /* Allow shrinking below content size */
+    max-width: calc(50% - 10px); /* 50% minus half of gap */
+  }
+
+  /* When only one child (calculator alone), allow full width */
+  .main-layout > *:only-child {
+    max-width: 100%;
+  }
+
+  .footer {
+    margin-top: 24px;
+  }
+}

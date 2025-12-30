@@ -1,0 +1,141 @@
+.outfit-table-container {
+  overflow-x: auto;
+  margin: 0;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.outfit-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.outfit-table thead {
+  background: var(--season-gradient);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.outfit-table th {
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.outfit-table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+  transition: background 0.2s;
+}
+
+.outfit-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.outfit-table tbody tr.selected {
+  background: #e3f2fd;
+}
+
+.outfit-table td {
+  padding: 12px 8px;
+  vertical-align: middle;
+}
+
+.col-select {
+  width: 50px; /* добавлено немного пространства слева на десктопе */
+  text-align: center;
+}
+
+.col-image {
+  width: 100px;
+}
+
+.col-name {
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.col-details {
+  min-width: 120px;
+}
+
+.col-designer {
+  min-width: 100px;
+}
+
+.col-date {
+  min-width: 100px;
+}
+
+.col-price {
+  width: 120px;
+}
+
+.table-toggle {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 2px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  color: transparent;
+}
+
+.table-toggle.active {
+  background: var(--season-primary);
+  border-color: var(--season-primary);
+  color: #fff;
+}
+
+.table-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .outfit-table th,
+  .outfit-table td {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+
+  .outfit-table .col-select {
+    width: 0; /* скрыть чекбокс на мобильных */
+  }
+
+  .outfit-table .table-toggle {
+    display: none;
+  }
+
+  .outfit-table .col-name {
+    min-width: 100px;
+    max-width: 140px;
+    word-break: break-word;
+  }
+
+  .outfit-table .col-details {
+    min-width: 120px;
+    max-width: 140px;
+    word-break: break-word;
+  }
+
+  .outfit-table .price-cell {
+    font-size: 12px;
+  }
+}

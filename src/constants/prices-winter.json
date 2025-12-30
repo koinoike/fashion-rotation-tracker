@@ -1,0 +1,850 @@
+{
+  "1": {
+    "image": "1_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "WINTER CHERRY",
+    "name": [
+      "Hairstyle \"Cherry Ribbons\"",
+      "Parka with Mittens \"Snowflake\"",
+      "High Combat Boots"
+    ],
+    "designer": "aesthete",
+    "date": "2021-12-07"
+  },
+  "2": {
+    "image": "1_2.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "CAT DELIGHT",
+    "name": ["Cat Hat", "Coat on Fish Fur", "Winter Sneakers"],
+    "designer": "plushy",
+    "date": "2021-12-07"
+  },
+  "3": {
+    "image": "1_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "NORTHERN LIGHTS",
+    "name": [
+      "Hairstyle \"Starfall\"",
+      "Moon Horns",
+      "Jacket \"Northern Lights\"",
+      "Boots \"Magic Lights\""
+    ],
+    "designer": "nevalina",
+    "date": "2021-12-07"
+  },
+  "4": {
+    "image": "2_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "WINTER SEASON",
+    "name": [
+      "Hairstyle \"Little Bead\"",
+      "Sheepskin Coat \"Winter Morning\"",
+      "Boots \"Comfort\""
+    ],
+    "designer": "oniga",
+    "date": "2021-12-07"
+  },
+  "5": {
+    "image": "2_2.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "WINTER NIGHT",
+    "name": [
+      "Hairstyle \"Winter Night\"",
+      "Sweater \"Winter Night\"",
+      "Footwear \"Winter Night\""
+    ],
+    "designer": "kisik20031",
+    "date": "2021-12-07"
+  },
+  "6": {
+    "image": "2_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "WHITE FOX",
+    "name": [
+      "Hat \"Tail\"",
+      "Fur Coat \"Fur\"",
+      "Boots \"Pompoms\"",
+      "Glasses \"Yellow Eye\""
+    ],
+    "designer": "avokado4",
+    "date": "2021-12-07"
+  },
+  "7": {
+    "image": "3_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "CHRISTMAS TREE",
+    "name": [
+      "Hairstyle \"Snowdrift\"",
+      "Dress \"With Love\"",
+      "Boots \"Crackers\""
+    ],
+    "designer": "adolfi",
+    "date": "2021-12-28"
+  },
+  "8": {
+    "image": "3_2.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "NEW YEAR'S HOUSE SPIRIT",
+    "name": [
+      "Twisted Cap",
+      "House Spirit's Fur Coat",
+      "Small Felt Boots",
+      "House Spirit's Nose"
+    ],
+    "designer": "bulya1138",
+    "date": "2021-12-28"
+  },
+  "9": {
+    "image": "3_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "WINTER DRIVE",
+    "name": [
+      "Hat \"Horned Earmuff\"",
+      "Sweater \"Christmas Tree, Shine!\"",
+      "Footwear \"Winter Twilight\"",
+      "Glasses \"Snow-White\""
+    ],
+    "designer": "forseti",
+    "date": "2021-12-28"
+  },
+  "10": {
+    "image": "4_1.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "NIGHT SNOWFALL",
+    "name": [
+      "Hairstyle \"Whiteness\"",
+      "Black and White Scarf",
+      "Sweater \"White\"",
+      "Shoes \"Winter Night\""
+    ],
+    "designer": "kabanka",
+    "date": "2022-01-18"
+  },
+  "11": {
+    "image": "4_2.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "FATHER FROST",
+    "name": [
+      "Father Frost's Cap",
+      "Fur Coat \"Winter Mood\"",
+      "Winter Felt Boots",
+      "Accessory \"Candy\""
+    ],
+    "designer": "varya44562",
+    "date": "2021-12-28"
+  },
+  "12": {
+    "image": "4_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "SIMPLE BUT COZY",
+    "name": [
+      "Hat with Pompom \"Cozy\"",
+      "Sweater with Little Deer",
+      "Christmas Socks",
+      "Accessory \"Hot Cocoa\""
+    ],
+    "designer": "kroshkino imya",
+    "date": "2021-12-28"
+  },
+  "13": {
+    "image": "5_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "CHRISTMAS IN PARIS",
+    "name": [
+      "Hairstyle \"Mademoiselle\"",
+      "Half-Coat \"Parisian Chic\"",
+      "Ankle Boots \"Eiffel Tower\""
+    ],
+    "designer": "zombanya",
+    "date": "2022-01-18"
+  },
+  "14": {
+    "image": "5_2.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "WARM VIBE",
+    "name": [
+      "Hairstyle \"Snowdrift\"",
+      "Fur Coat \"Frost\"",
+      "Black Sneakers",
+      "Glasses \"Through the Frost\""
+    ],
+    "designer": "kapibaryka",
+    "date": "2022-01-18"
+  },
+  "15": {
+    "image": "5_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "WINTER EXTRAVAGANZA",
+    "name": [
+      "Hat \"Frost and Elegance\"",
+      "Jacket \"Winter Aesthetic\"",
+      "Platform Sneakers \"Charm\"",
+      "Mask-Glasses \"Cold Ball\""
+    ],
+    "designer": "hannibal",
+    "date": "2022-01-18"
+  },
+  "16": {
+    "image": "6_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "GLAMOROUS WINTER",
+    "name": [
+      "Hat \"Frozen Gold\"",
+      "Jacket \"Cold Pink\"",
+      "Boots \"Pink Snow\""
+    ],
+    "designer": "matdtq solo",
+    "date": "2022-02-08"
+  },
+  "17": {
+    "image": "6_2.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "EVENING COLD",
+    "name": [
+      "Hairstyle \"Not Cold\"",
+      "Winter Jacket \"Cozy\"",
+      "Footwear \"Country Style\""
+    ],
+    "designer": "cool lasan",
+    "date": "2022-02-08"
+  },
+  "18": {
+    "image": "6_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "WINTER COMBO",
+    "name": [
+      "Hat \"Fox Dream\"",
+      "Jacket \"Ice Figure\"",
+      "Boots \"Speedsters\"",
+      "Scarf \"Dense Forest\""
+    ],
+    "designer": "tapochek50",
+    "date": "2022-02-08"
+  },
+  "19": {
+    "image": "7_1.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "NEW YEAR'S STAR",
+    "name": [
+      "Hairstyle \"New Year's\"",
+      "Dress \"Starry Night\"",
+      "Shoes \"New Year\"",
+      "Bag \"Little Star\""
+    ],
+    "designer": "nyasha kotyasha8",
+    "date": "2022-12-27"
+  },
+  "20": {
+    "image": "7_2.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "WINTER BUSTLE",
+    "name": ["Beanie Hat", "Sweater with Scarf \"Flame\"", "Boots \"Cherry\""],
+    "designer": "engie super",
+    "date": "2022-02-15"
+  },
+  "21": {
+    "image": "7_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "LITTLE SNOWMAN",
+    "name": [
+      "Hat \"Little Snowman\"",
+      "Fur Coat \"Rowan\"",
+      "Felt Boots \"Rowan\"",
+      "Accessory \"Christmas Tree\""
+    ],
+    "designer": "palka yolki",
+    "date": "2022-02-15"
+  },
+  "22": {
+    "image": "8_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "PLAYFUL LITTLE DEER",
+    "name": ["Hairstyle \"Eared\"", "Soft Jacket", "House Slippers"],
+    "designer": "koren 20",
+    "date": "2022-12-27"
+  },
+  "23": {
+    "image": "8_2.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "ALPINE MORNING",
+    "name": ["Warm Hat", "Warm Sheepskin Coat", "Warm Boots", "Hot Coffee"],
+    "designer": "bard",
+    "date": "2022-12-27"
+  },
+  "24": {
+    "image": "8_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "TINSEL",
+    "name": ["Hat \"Tinsel\"", "Sweater \"Tinsel\"", "Sneakers \"Tinsel\""],
+    "designer": "antidotix",
+    "date": "2022-12-27"
+  },
+  "25": {
+    "image": "9_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "WINTER DRIVE",
+    "name": [
+      "Hairstyle \"Snow Whirl\"",
+      "Jacket \"Chill\"",
+      "Boots \"Stompers\""
+    ],
+    "designer": "nova",
+    "date": "2023-01-24"
+  },
+  "26": {
+    "image": "9_2.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "WONDERFUL ELF",
+    "name": [
+      "Long Cap",
+      "Funny Knitted Sweater",
+      "Boots with Knee Socks",
+      "Snow Globe"
+    ],
+    "designer": "norin",
+    "date": "2022-12-27"
+  },
+  "27": {
+    "image": "9_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "OH-OH, IT'S FREEZING!",
+    "name": [
+      "Ushanka \"Don't Get Blown Away!\"",
+      "Fur Coat \"Warmth\"",
+      "Felt Boots \"Just About\""
+    ],
+    "designer": "dianochka964",
+    "date": "2022-12-27"
+  },
+  "28": {
+    "image": "10_1.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "LONGING FOR THE SUN",
+    "name": [
+      "Hairstyle \"Icicles\"",
+      "Sweater \"Blind Plaid\"",
+      "Shoes \"Squeakers\"",
+      "Accessory \"Warm Ears\""
+    ],
+    "designer": "timaze",
+    "date": "2023-01-24"
+  },
+  "29": {
+    "image": "10_2.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "SOUTHERNER",
+    "name": ["Hat \"Whirl\"", "Jacket \"Pockets\"", "Boots \"Warm\""],
+    "designer": "kosmonav-t",
+    "date": "2023-02-07"
+  },
+  "30": {
+    "image": "10_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "NEW YEAR IN SIBERIA",
+    "name": [
+      "Hat \"Siberian Wolf\"",
+      "Sweatshirt \"Siberian Freshness\"",
+      "Socks \"Pattern on Glass\"",
+      "Bowl of Olivier Salad"
+    ],
+    "designer": "kot bely 20",
+    "date": "2023-01-24"
+  },
+  "31": {
+    "image": "11_1.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "WARMTH WITH MUSIC",
+    "name": [
+      "Hairstyle \"Music Lover\"",
+      "Coat with Gloves",
+      "Lace-Up Boots",
+      "Glasses \"Warm Shine\""
+    ],
+    "designer": "losyash255",
+    "date": "2023-01-24"
+  },
+  "32": {
+    "image": "11_2.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "FEBRUARY",
+    "name": ["Hat \"February\"", "Jacket \"Khaki\"", "Boots \"Pudding\""],
+    "designer": "pelmen229",
+    "date": "2023-02-07"
+  },
+  "33": {
+    "image": "11_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "DEER NEW YEAR",
+    "name": [
+      "Hairstyle \"Little Deer\"",
+      "Sweater \"Cozy\"",
+      "Footwear \"New Year\""
+    ],
+    "designer": "yasya 6",
+    "date": "2023-01-24"
+  },
+  "34": {
+    "image": "12_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "SHEEP TENDERNESS",
+    "name": ["Hat \"Sheep\"", "Coat \"Purple Cold\"", "Uggs with Sequins"],
+    "designer": "fizunya",
+    "date": "2023-02-07"
+  },
+  "35": {
+    "image": "12_2.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "WINTER IN THE SOUTH",
+    "name": [
+      "Hairstyle \"Shaggy Hair\"",
+      "Jacket \"Free Top\"",
+      "Footwear \"Comfortable Boots\"",
+      "Glasses \"Red Eyes\""
+    ],
+    "designer": "margo82015",
+    "date": "2023-02-07"
+  },
+  "36": {
+    "image": "12_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "NOT COLD",
+    "name": [
+      "Hat \"Warmth\"",
+      "Coat with Scarf \"Cozy\"",
+      "Boots with Leg Warmers \"Not Cold\""
+    ],
+    "designer": "kabanka",
+    "date": "2023-02-07"
+  },
+  "37": {
+    "image": "13_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "RUSH TO CLASS",
+    "name": [
+      "Hairstyle \"In a Hurry\"",
+      "Sweatshirt \"First Thing I Grabbed\"",
+      "Boots \"Rush to Class\""
+    ],
+    "designer": "garyusha liza",
+    "date": "2023-02-07"
+  },
+  "38": {
+    "image": "13_2.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "NEW YEAR'S JESTER",
+    "name": [
+      "Cap Hat \"Jester\"",
+      "Shirt \"Starry Laughter\"",
+      "Shoes \"With Fur\""
+    ],
+    "designer": "kapibaryka",
+    "date": "2023-12-28"
+  },
+  "39": {
+    "image": "13_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "SNOWFALL",
+    "name": [
+      "Hairstyle \"Snowfall\"",
+      "Hoodie \"Tate\"",
+      "Sneakers \"Snowdrop\""
+    ],
+    "designer": "miuna",
+    "date": "2023-02-07"
+  },
+  "40": {
+    "image": "14_1.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "FLAME OF WINTER",
+    "name": [
+      "Hairstyle \"Flaming Style\"",
+      "Jacket \"Warming Flame\"",
+      "Boots \"Flaming Step\"",
+      "Glasses \"Freezing Gaze\""
+    ],
+    "designer": "kakanya",
+    "date": "2023-12-28"
+  },
+  "41": {
+    "image": "14_2.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "BURNING STYLE",
+    "name": [
+      "Hairstyle \"Burning Style\"",
+      "Turtleneck \"Burning Style\"",
+      "Boots \"Burning Style\""
+    ],
+    "designer": "barnik11",
+    "date": "2024-01-30"
+  },
+  "42": {
+    "image": "14_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "SNOWY MOOD",
+    "name": [
+      "Hairstyle \"Cinnamon\"",
+      "Jacket \"Snowy Comfort\"",
+      "Boots \"Snowy Mood\"",
+      "Accessory \"Deer Antlers\""
+    ],
+    "designer": "nyasha kotyasha8",
+    "date": "2023-12-12"
+  },
+  "43": {
+    "image": "15_1.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "WINTER TALE",
+    "name": [
+      "Ushanka Hat \"Meow\"",
+      "Jacket \"Winter Tale\"",
+      "Footwear \"Winter Tale\"",
+      "Bag \"Winter Tale\""
+    ],
+    "designer": "ilizka",
+    "date": "2024-01-30"
+  },
+  "44": {
+    "image": "15_2.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "COZY WINTER",
+    "name": [
+      "Ushanka Hat \"Woof\"",
+      "Jacket \"Cozy Winter\"",
+      "Footwear \"Cozy Winter\"",
+      "Glasses \"Cozy Winter\""
+    ],
+    "designer": "ilizka",
+    "date": "2024-01-30"
+  },
+  "45": {
+    "image": "15_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "TREE FROG",
+    "name": [
+      "Hat \"Tree Frog\"",
+      "Jacket with Mittens \"I'll Warm Up\"",
+      "Boots \"Little Snow\""
+    ],
+    "designer": "kabanka",
+    "date": "2023-12-28"
+  },
+  "46": {
+    "image": "16_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "MAGICAL WALK",
+    "name": [
+      "Hairstyle \"Hot Chocolate\"",
+      "Jacket \"Frosty\"",
+      "Boots with Leg Warmers"
+    ],
+    "designer": "nyasha kotyasha8",
+    "date": "2024-02-20"
+  },
+  "47": {
+    "image": "16_2.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "WINTER SLEEP",
+    "name": [
+      "Hairstyle \"Icicle\"",
+      "Hoodie \"Sweet Dream\"",
+      "Slippers \"Polar Bear\""
+    ],
+    "designer": "kabanka",
+    "date": "2024-02-20"
+  },
+  "48": {
+    "image": "16_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "FLUFFY",
+    "name": ["Eared Hat \"Fluffy\"", "Fur Coat \"Fluffy\"", "Boots \"Fluffy\""],
+    "designer": "vilson05",
+    "date": "2023-12-28"
+  },
+  "49": {
+    "image": "17_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "LIGHT WINTER",
+    "name": [
+      "Hairstyle \"Bright Blonde\"",
+      "Jacket \"Light Winter\"",
+      "Boots \"Light Winter\""
+    ],
+    "designer": "sonnchi",
+    "date": "2024-02-20"
+  },
+  "50": {
+    "image": "17_2.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "FEBRUARY",
+    "name": ["Hat \"February\"", "Jacket \"February\"", "Boots \"February\""],
+    "designer": "timaze",
+    "date": "2024-02-20"
+  },
+  "51": {
+    "image": "17_3.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "POLAR NIGHT",
+    "name": [
+      "Hairstyle \"Winter Sleep\"",
+      "Pajamas \"Polar Star\"",
+      "Slippers \"Soft Step\""
+    ],
+    "designer": "reyni_147",
+    "date": "2024-02-20"
+  },
+  "52": {
+    "image": "18_1.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "WARMTH OF THE NORTH",
+    "name": [
+      "Hairstyle \"Northern\"",
+      "Cape \"Little Deer\"",
+      "Boots \"Warmth of the North\"",
+      "Accessory \"Deer Antlers\""
+    ],
+    "designer": "olina",
+    "date": "2024-12-10"
+  },
+  "53": {
+    "image": "18_2.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "STYLISH TROUBLEMAKER",
+    "name": [
+      "Hat \"Kawaii\"",
+      "Jacket \"Strawberry Positive\"",
+      "Boots \"Dragee\""
+    ],
+    "designer": "lazur luni",
+    "date": "2024-12-10"
+  },
+  "54": {
+    "image": "18_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "GINGERBREAD MAN",
+    "name": [
+      "Hat \"Whipped Cream\"",
+      "Tuxedo \"Gingerbread\"",
+      "Boots \"Frosting Laces\"",
+      "Accessory \"Christmas Candy Cane\""
+    ],
+    "designer": "srozhkami",
+    "date": "2024-12-10"
+  },
+  "55": {
+    "image": "19_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "PLAYFUL COOLNESS",
+    "name": [
+      "Hairstyle \"Frosty Treat\"",
+      "Suit \"Snow Whirl\"",
+      "Shaggy Boots \"Coolness\""
+    ],
+    "designer": "seryozha242019",
+    "date": "2024-12-24"
+  },
+  "56": {
+    "image": "19_2.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "NEW YEAR'S RASCAL",
+    "name": [
+      "Hat \"Christmas Ornament\"",
+      "Padded Pants \"Rascal\"",
+      "Felt Boots \"Rascal\"",
+      "Accessory \"Fireworks\""
+    ],
+    "designer": "losyash255",
+    "date": "2024-12-24"
+  },
+  "57": {
+    "image": "19_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "TANGERINE",
+    "name": [
+      "Hat \"Peel\"",
+      "Fur Coat \"Citrus\"",
+      "Slippers \"Tangerine Flesh\"",
+      "Glasses \"Tangerine Slices\""
+    ],
+    "designer": "kirieshk",
+    "date": "2024-12-24"
+  },
+  "58": {
+    "image": "20_1.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "MADAM TARTLET",
+    "name": [
+      "Hairstyle \"Caviar Scatter\"",
+      "Dress \"Crumbly Pastry\"",
+      "Shoes \"Bright Accent\"",
+      "Accessory \"Tartlet with Caviar\""
+    ],
+    "designer": "srozhkami",
+    "date": "2025-01-21"
+  },
+  "59": {
+    "image": "20_2.png",
+    "price": "480",
+    "currency": "coins",
+    "setName": "MONSIEUR OLIVIER",
+    "name": [
+      "Hat \"Porcelain Plate\"",
+      "Jacket \"Diced\"",
+      "Footwear \"Sausage Loafers\"",
+      "Accessory \"Big Spoon\""
+    ],
+    "designer": "srozhkami",
+    "date": "2025-01-21"
+  },
+  "60": {
+    "image": "20_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "SNOW LEOPARD",
+    "name": [
+      "Hat \"Snow Leopard\"",
+      "Sheepskin Coat \"Snow Leopard\"",
+      "Felt Boots \"Snow Leopard\"",
+      "Accessory \"Rooster\""
+    ],
+    "designer": "malvinka333",
+    "date": "2025-01-21"
+  },
+  "61": {
+    "image": "21_1.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "WINTER CHARM",
+    "name": [
+      "Hairstyle \"Winter Charm\"",
+      "Sweater \"Sweet Tooth\"",
+      "Boots \"Winter Charm\""
+    ],
+    "designer": "meowlyth",
+    "date": "2025-12-09"
+  },
+  "62": {
+    "image": "21_2.png",
+    "price": "360",
+    "currency": "coins",
+    "setName": "HERRING RUTABAGA",
+    "name": [
+      "Hat \"Herring Rutabaga\"",
+      "Fur Coat \"Herring Rutabaga\"",
+      "Felt Boots \"Herring Rutabaga\""
+    ],
+    "designer": "mircha2010",
+    "date": "2025-12-09"
+  },
+  "63": {
+    "image": "21_3.png",
+    "price": "40",
+    "currency": "rumb",
+    "setName": "STRAWBERRY WINTER",
+    "name": [
+      "Hat \"Strawberry\"",
+      "Fur Coat \"Strawberry\"",
+      "Boots \"Berries\""
+    ],
+    "designer": "gutalin",
+    "date": "2025-12-09"
+  },
+  "64": {
+    "image": "64.png",
+    "setName": "BLUE FROST",
+    "price": "480",
+    "currency": "coins",
+    "name": [
+      "Hairstyle \"Blue Frost\"",
+      "Fur Coat \"Blue Frost\"",
+      "Boots \"Blue Frost\"",
+      "Fur Earmuffs \"Blue Frost\""
+    ],
+    "designer": "agnessa star",
+    "date": "2025-12-23"
+  },
+  "65": {
+    "image": "65.png",
+    "setName": "SIR TANGERINE",
+    "price": "360",
+    "currency": "coins",
+    "name": [
+      "Hairstyle \"Fruit Beret\"",
+      "Cardigan \"Citrus Slice\"",
+      "Uggs \"Tangerine Seeds\""
+    ],
+    "designer": "srozhkami",
+    "date": "2025-12-23"
+  },
+  "66": {
+    "image": "66.png",
+    "setName": "MAIN DECORATION",
+    "price": "40",
+    "currency": "rumb",
+    "name": [
+      "Hairstyle \"Christmas Tree\"",
+      "Sweater \"New Year Lights\"",
+      "Knitted Slippers",
+      "Necklace \"Garland\""
+    ],
+    "designer": "radians",
+    "date": "2025-12-23"
+  }
+}
