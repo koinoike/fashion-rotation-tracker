@@ -50,7 +50,7 @@ export default function Calculator({
               >
                 <div className="result-row">
                   <span className="result-label">
-                    {isCurrent ? "Сейчас" : `№${idx + 1}`}:
+                    {isCurrent ? "Current" : `№${idx + 1}`}:
                   </span>
                   <span className="result-value">
                     {t.start} – {t.end}
