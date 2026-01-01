@@ -5,7 +5,7 @@
   border-radius: 12px;
   padding: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: visible;
+  overflow: visible !important;
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -13,7 +13,7 @@
 
 .carousel-image-container {
   position: relative;
-  overflow: visible;
+  overflow: visible !important;
 }
 
 /* === INDICATORS CORE === */
@@ -102,11 +102,14 @@
   align-items: center;
   gap: 10px;
   width: 100%;
+  overflow: visible !important;
+  position: relative;
 }
 
 .image-wrapper {
   position: relative;
   width: 100%;
+  overflow: visible !important;
 }
 
 .image {
@@ -251,6 +254,7 @@
   .image-wrapper {
     margin: -8px -8px 0 -8px;
     width: calc(100% + 16px);
+    overflow: visible !important;
   }
 
   .image {
@@ -299,7 +303,7 @@
 
   .carousel-image-container {
     border-radius: 12px;
-    overflow: visible;
+    overflow: visible !important;
     position: relative;
   }
 
@@ -354,6 +358,7 @@
 
   .image-wrapper {
     position: relative;
+    overflow: visible !important;
   }
 
   .title-block {
@@ -397,7 +402,7 @@
 
   .carousel-image-container {
     border-radius: 12px;
-    overflow: visible;
+    overflow: visible !important;
     position: relative;
   }
 
@@ -451,6 +456,7 @@
 
   .image-wrapper {
     position: relative;
+    overflow: visible !important;
   }
 
   .title-block {

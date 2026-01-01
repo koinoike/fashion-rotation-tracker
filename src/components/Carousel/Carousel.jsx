@@ -36,6 +36,9 @@ export default function Carousel({
   const [ready, setReady] = useState(false);
   const { seasonData } = useSeason();
 
+  // NEW: State for synchronizing outfit clicks with price overlay
+  const [activeOverlayIndex, setActiveOverlayIndex] = useState(null);
+
   useEffect(() => {
     if (currentIndex > items.length) {
       onSelect(1);
@@ -78,6 +81,35 @@ export default function Carousel({
     return () => cancelAnimationFrame(frame);
   }, [seasonData.id]);
 
+  // NEW: Reset active overlay when collection changes
+  useEffect(() => {
+    setActiveOverlayIndex(null);
+  }, [safeIndex, seasonData.path]);
+
+  // NEW: Handle outfit clicks from CarouselImage
+  const handleOutfitClick = (index, outfit) => {
+    // Toggle: if clicking the same outfit, close it
+    setActiveOverlayIndex((prev) => (prev === index ? null : index));
+
+    // Update the selected outfit for the parent component
+    if (outfit.isValid()) {
+      onItemSelect(outfit);
+    } else {
+      onItemSelect(null);
+    }
+  };
+
+  // NEW: Handle clicks from PriceOverlay (dots/labels)
+  const handlePriceOverlaySelect = (outfit) => {
+    // Always update parent's selected outfit
+    onItemSelect(outfit);
+  };
+
+  // NEW: Handle active index change from PriceOverlay dots
+  const handleActiveIndexChange = (newIndex) => {
+    setActiveOverlayIndex(newIndex);
+  };
+
   return (
     <div
       className={`carousel-wrapper ${shouldBlur ? "inactive-season" : ""} ${
@@ -100,8 +132,14 @@ export default function Carousel({
             shouldBlur={shouldBlur}
             outfits={outfits}
             devMode={devMode}
+            onOutfitClick={handleOutfitClick} // NEW: Pass click handler
           >
-            <PriceOverlay outfits={outfits} onItemSelect={onItemSelect} />
+            <PriceOverlay
+              outfits={outfits}
+              onItemSelect={handlePriceOverlaySelect}
+              activeIndex={activeOverlayIndex}
+              onActiveIndexChange={handleActiveIndexChange}
+            />
           </CarouselImage>
         </CarouselControls>
 

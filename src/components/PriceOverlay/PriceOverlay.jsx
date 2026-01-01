@@ -4,7 +4,12 @@ import "./PriceOverlay.css";
 // Set which price card to preopen on load: 0 (first), 1 (second), 2 (third), or null (none)
 const PREOPEN_CARD_INDEX = 1;
 
-export default function PriceOverlay({ outfits, onItemSelect }) {
+export default function PriceOverlay({
+  outfits,
+  onItemSelect,
+  activeIndex: externalActiveIndex,
+  onActiveIndexChange,
+}) {
   const points = [
     { x: 12, y: 48 },
     { x: 37, y: 37 },
@@ -14,8 +19,13 @@ export default function PriceOverlay({ outfits, onItemSelect }) {
   const isMobile = window.innerWidth < 640;
   const isDesktop = window.innerWidth >= 1280;
 
-  // Initialize with selected card open if PREOPEN_CARD_INDEX is set
-  const [activeIndex, setActiveIndex] = useState(PREOPEN_CARD_INDEX);
+  // Use external active index if provided, otherwise use internal state
+  const [internalActiveIndex, setInternalActiveIndex] =
+    useState(PREOPEN_CARD_INDEX);
+  const activeIndex =
+    externalActiveIndex !== undefined
+      ? externalActiveIndex
+      : internalActiveIndex;
   const [hasInitialized, setHasInitialized] = useState(false);
 
   // позиции меток относительно точек (в процентах)
@@ -74,20 +84,46 @@ export default function PriceOverlay({ outfits, onItemSelect }) {
     }
   }, [outfits, hasInitialized, onItemSelect]);
 
+  // Handle external active index changes
+  useEffect(() => {
+    if (
+      externalActiveIndex !== undefined &&
+      outfits &&
+      outfits[externalActiveIndex]
+    ) {
+      const outfit = outfits[externalActiveIndex];
+      if (outfit.isValid()) {
+        onItemSelect(outfit);
+      } else {
+        onItemSelect(null);
+      }
+    }
+  }, [externalActiveIndex, outfits, onItemSelect]);
+
   const handleDotClick = (idx) => {
     const newIndex = activeIndex === idx ? null : idx;
-    setActiveIndex(newIndex);
 
+    // Notify parent about index change (for syncing with outfit clicks)
+    if (onActiveIndexChange) {
+      onActiveIndexChange(newIndex);
+    }
+
+    // Notify parent about outfit selection
     if (newIndex !== null && outfits && outfits[idx]) {
       const outfit = outfits[idx];
-
       if (outfit.isValid()) {
         onItemSelect(outfit);
       } else {
         onItemSelect(null);
       }
     } else {
+      // When closing (newIndex is null), notify parent
       onItemSelect(null);
+    }
+
+    // Update internal state if not controlled externally
+    if (externalActiveIndex === undefined) {
+      setInternalActiveIndex(newIndex);
     }
   };
 

@@ -11,7 +11,6 @@ const USE_DYNAMIC_BACKGROUNDS = true;
 
 // 🎄 New Year background settings
 const ENABLE_NEW_YEAR_BACKGROUND = true;
-const NEW_YEAR_BACKGROUND_ALWAYS = true; // set to true to show New Year's background all the time
 
 export default function CarouselImage({
   item,
@@ -23,6 +22,7 @@ export default function CarouselImage({
   outfits = [],
   children,
   devMode = false,
+  onOutfitClick, // NEW prop for handling outfit clicks
 }) {
   const imageRef = useRef(null);
   const [imageDimensions, setImageDimensions] = useState({
@@ -33,6 +33,7 @@ export default function CarouselImage({
   const [showOutfits, setShowOutfits] = useState(true);
   const [showGrid, setShowGrid] = useState(true);
   const [showOutlines, setShowOutlines] = useState(true);
+  const [hoveredOutfit, setHoveredOutfit] = useState(null); // NEW state for hover
 
   const { seasonData } = useSeason();
   const prevSeasonRef = useRef(seasonData.path);
@@ -49,24 +50,21 @@ export default function CarouselImage({
     updatePosition
   );
 
-  // Check if we're in New Year period (Dec 25 - Jan 7)
+  // Функция для определения, находимся ли мы в новогоднем периоде
   const isNewYearPeriod = () => {
     if (!ENABLE_NEW_YEAR_BACKGROUND) return false;
-
-    // If always enabled, return true
-    if (NEW_YEAR_BACKGROUND_ALWAYS) return true;
 
     const now = new Date();
     const month = now.getMonth(); // 0-11
     const day = now.getDate(); // 1-31
 
-    // December (month 11) from 25 to 31
+    // Декабрь (месяц 11) с 25 по 31
     if (month === 11 && day >= 25) {
       return true;
     }
 
-    // January (month 0) from 1 to 7
-    if (month === 0 && day <= 7) {
+    // Январь (месяц 0) с 1 по 7
+    if (month === 0 && day <= 14) {
       return true;
     }
 
@@ -113,6 +111,14 @@ export default function CarouselImage({
   const handleOutfitError = (index) =>
     setHiddenOutfits((p) => ({ ...p, [index]: true }));
 
+  // NEW: Handle outfit click
+  const handleOutfitClickInternal = (index, outfit) => {
+    if (devMode) return; // Don't trigger click in dev mode
+    if (onOutfitClick) {
+      onOutfitClick(index, outfit);
+    }
+  };
+
   const isMobile = imageDimensions.width < 640;
 
   const getBackgroundImage = () => {
@@ -120,7 +126,7 @@ export default function CarouselImage({
       return "/assets/background/background.png";
     }
 
-    // Check for New Year period for winter season
+    // Проверяем новогодний период для зимнего сезона
     if (isNewYearPeriod() && seasonData.path === "winter") {
       return `/assets/background/background_winter_newyear.png`;
     }
@@ -194,6 +200,7 @@ export default function CarouselImage({
             const scaleForUI =
               pos.scale * (isMobile ? MOBILE_SCALE_MULTIPLIER : 1) * 100;
             const isBeingDragged = devMode && selectedPodium === index;
+            const isHovered = hoveredOutfit === index && !devMode;
 
             return (
               <img
@@ -213,22 +220,31 @@ export default function CarouselImage({
                     ? isBeingDragged
                       ? "grabbing"
                       : "grab"
-                    : "default",
-                  pointerEvents: devMode ? "auto" : "none",
+                    : "pointer",
+                  pointerEvents: "auto",
                   userSelect: "none",
+                  WebkitTapHighlightColor: "transparent",
+                  WebkitTouchCallout: "none",
+                  WebkitUserSelect: "none",
                   filter: isBeingDragged
                     ? "drop-shadow(0 4px 12px rgba(102, 126, 234, 0.6))"
+                    : isHovered
+                    ? "drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3)) brightness(1.05)"
                     : "none",
+                  willChange: isHovered ? "filter" : "auto",
                   transition: isBeingDragged
                     ? "none"
-                    : "opacity 0.4s ease-in-out",
+                    : "opacity 0.4s ease-in-out, filter 0.3s ease-in-out",
                   outline:
                     devMode && showOutlines && !isBeingDragged
                       ? "2px dashed rgba(102, 126, 234, 0.5)"
                       : "none",
                   outlineOffset: "4px",
                 }}
-                onMouseDown={(e) => handleMouseDown(e, index)}
+                onMouseDown={(e) => devMode && handleMouseDown(e, index)}
+                onMouseEnter={() => !devMode && setHoveredOutfit(index)}
+                onMouseLeave={() => !devMode && setHoveredOutfit(null)}
+                onClick={() => handleOutfitClickInternal(index, outfit)}
                 draggable={false}
               />
             );
@@ -247,7 +263,7 @@ export default function CarouselImage({
       </div>
       {countdown ? (
         <div className="countdown">
-          Collection changes in{" "}
+          До смены коллекции:{" "}
           <span className="countdown-time">{countdown}</span>
         </div>
       ) : (

@@ -1,6 +1,9 @@
+/* === BACKGROUND === */
+
 .background-container {
   position: relative;
   width: 100%;
+  overflow: visible !important;
 }
 
 .background-layer {
@@ -63,15 +66,65 @@
   position: absolute;
   height: auto;
   pointer-events: none;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, filter 0.3s ease-in-out;
   z-index: 5;
+
+  /* Remove mobile tap highlight */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  /* Prevent image drag */
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.outfit-overlay:focus,
+.outfit-overlay:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* === IMAGE WRAPPER === */
+
+.image-wrapper {
+  position: relative;
+  overflow: visible !important;
 }
 
 /* === CLIP OUTFITS === */
 
 .image-wrapper.clip-outfits {
-  overflow: hidden;
+  overflow: hidden !important;
   border-radius: 12px;
+}
+
+/* Ensure parent doesn't clip */
+.image-block {
+  overflow: visible !important;
+  position: relative;
+}
+
+/* Main background image */
+.image {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+.image:focus,
+.image:active {
+  outline: none;
 }
 
 /* === MOBILE === */
@@ -82,7 +135,14 @@
     box-shadow: none;
   }
 
+  .image-wrapper {
+    margin: -8px -8px 0 -8px;
+    width: calc(100% + 16px);
+    overflow: visible !important;
+  }
+
   .image-wrapper.clip-outfits {
+    overflow: hidden !important;
     border-radius: 12px 12px 0 0;
   }
 }

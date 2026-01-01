@@ -4,8 +4,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
-  z-index: 120; /* ✅ Above title/countdown (110) */
+  pointer-events: none; /* ✅ Container is non-interactive */
+  z-index: 120;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -35,15 +35,18 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 125; /* ✅ Above overlay */
+  z-index: 125;
 }
+
 .price-line {
   stroke: var(--season-primary);
   stroke-width: 2;
   stroke-dasharray: 5, 5;
   opacity: 0.7;
   transition: opacity 0.3s ease;
+  pointer-events: none; /* ✅ Lines don't block */
 }
+
 .price-dot {
   position: absolute;
   width: 14px;
@@ -53,30 +56,43 @@
   border-radius: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  pointer-events: all;
+  pointer-events: all; /* ✅ Only dots are clickable */
   opacity: 0;
   animation: fadeIn 0.5s forwards;
-  z-index: 130; /* ✅ Dots above lines */
+  z-index: 130;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+  /* Remove tap highlight */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
+
 .price-dot:hover {
   transform: translate(-50%, -50%) scale(1.3);
   box-shadow: 0 0 15px var(--season-accent-20);
 }
+
 .price-dot:active {
   transform: translate(-50%, -50%) scale(1.1);
 }
+
+.price-dot:focus {
+  outline: none;
+}
+
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
+
 .price-label {
   position: absolute;
-  pointer-events: none;
-  z-index: 140; /* ✅ Labels on top */
+  pointer-events: none; /* ✅ Label container is non-interactive */
+  z-index: 140;
 }
+
 .price-text {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.75);
@@ -86,23 +102,35 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
   white-space: nowrap;
   border: 2px solid var(--season-primary);
-  pointer-events: all;
+  pointer-events: all; /* ✅ Only the text box is interactive for dragging */
   animation: scaleIn 0.2s ease-out;
   user-select: none;
   transition: box-shadow 0.2s ease;
   touch-action: none;
   transform: translateY(-50%);
+
+  /* Remove tap highlight */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
+
 .label-left .price-text {
   animation: scaleInLeft 0.2s ease-out;
   transform: translate(-100%, -50%);
 }
+
 .price-text:hover {
   box-shadow: 0 6px 20px var(--season-accent-20);
 }
+
 .price-text:active {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
+
+.price-text:focus {
+  outline: none;
+}
+
 @keyframes scaleIn {
   from {
     opacity: 0;
@@ -113,6 +141,7 @@
     transform: translateY(-50%) scale(1);
   }
 }
+
 @keyframes scaleInLeft {
   from {
     opacity: 0;
@@ -123,12 +152,14 @@
     transform: translate(-100%, -50%) scale(1);
   }
 }
+
 .set-name {
   font-weight: 600;
   font-size: 11px;
   margin-bottom: 3px;
   color: #333;
 }
+
 .price-value {
   display: flex;
   align-items: center;
@@ -137,19 +168,23 @@
   font-size: 13px;
   color: #333;
 }
+
 .currency-icon {
   width: 13px;
   height: 13px;
   flex-shrink: 0;
 }
+
 .price-name {
   margin-top: 3px;
 }
+
 .price-name div {
   font-size: 10px;
   color: #555;
   line-height: 1.3;
 }
+
 .price-meta {
   margin-top: 4px;
   font-size: 10px;
@@ -157,6 +192,7 @@
   font-style: italic;
   line-height: 1.3;
 }
+
 /* Tablet sizes */
 @media (min-width: 640px) {
   .price-dot {
@@ -189,6 +225,7 @@
     stroke-width: 3;
   }
 }
+
 /* Desktop - bigger cards with images (only on wide screens 1280px+) */
 @media (min-width: 1280px) {
   .price-dot {
@@ -199,6 +236,7 @@
     border-radius: 8px;
     width: fit-content;
   }
+
   /* Card with image - wider, allows text wrapping */
   .price-content-wrapper.with-image {
     display: flex;
@@ -210,6 +248,7 @@
     white-space: normal;
     padding: 8px 8px;
   }
+
   /* Card without image - compact, minimal width based on content */
   .price-content-wrapper:not(.with-image) {
     display: inline-block;
@@ -219,18 +258,20 @@
     white-space: nowrap;
     width: auto;
   }
+
   .price-content-wrapper.image-right {
     flex-direction: row;
   }
   .price-content-wrapper.image-left {
     flex-direction: row-reverse;
   }
+
   .price-image {
     flex-shrink: 0;
     width: 200px;
-    overflow: hidden;
     border-radius: 6px;
     background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    overflow: visible; /* ✅ Don't clip anything */
   }
   .price-image img {
     width: 100%;
@@ -238,9 +279,11 @@
     object-fit: contain;
     display: block;
   }
+
   .price-info {
     flex: 1;
   }
+
   .set-name {
     font-size: 18px;
     margin-bottom: 8px;
